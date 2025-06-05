@@ -1,0 +1,12 @@
+Package: Windpower
+Title: HoldsWindPowerDataForIrishGrid20152025
+Version: 0.0.0.9000
+Authors@R: 
+    person("Brendan", "O'Gorman", , "bogorman2@universityofgalway.ie", role = c("aut", "cre"))
+Description: This is a data package for the Eirgrid power generation data for the ten year period 2015 to 2025.
+Data is given to solar, wind and tradition generation at 15 minute invertals.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
