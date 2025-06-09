@@ -48,5 +48,5 @@ wind_generation_data <-wind_generation_data %>%
   select(year, month, day, hour, everything()) %>%filter(year >=2014, year <=2024)
 
 write_csv(wind_generation_data,file="Windpower2024/data/WindPower2024.csv")
-saveRDS(wind_generation_data,file = "Windpower2024/data/WindPower2024.rda") #saves the data to the ~/data to be available to package users
+save(wind_generation_data,file = "Windpower2024/data/WindPower2024.rda") #saves the data to the ~/data to be available to package users
 

@@ -39,21 +39,22 @@ prepare_2 <- function(file,region,l_skip=17){
 setwd("C:/Users/10972490/OneDrive - National University of Ireland, Galway/Rpackages/Rpackages")
 
 East_Region_Weather<-prepare_2("IrishRegionalWeatherData2024/data_raw/DublinAirport.csv","East",23)
-saveRDS(East_Region_Weather,"IrishRegionalWeatherData2024/data/East_Region_Weather.rdata")
+save(East_Region_Weather,file="IrishRegionalWeatherData2024/data/East_Region_Weather.rdata")
 write_csv(East_Region_Weather,"IrishRegionalWeatherData2024/data/East_Region_Weather.csv")
 
 West_Region_Weather<-prepare_2("IrishRegionalWeatherData2024/data_raw/MaceHead.csv","West",)
-saveRDS(West_Region_Weather,"IrishRegionalWeatherData2024/data/West_Region_Weather.rdata")
+save(West_Region_Weather,file="IrishRegionalWeatherData2024/data/West_Region_Weather.rdata")
 write_csv(West_Region_Weather,"IrishRegionalWeatherData2024/data/West_Region_Weather.csv")
 
 Central_Region_Weather<-prepare_2("IrishRegionalWeatherData2024/data_raw/Mullingar.csv","Central")
-saveRDS(Central_Region_Weather,"IrishRegionalWeatherData2024/data/Central_Region_Weather.rdata")
+save(Central_Region_Weather,file="IrishRegionalWeatherData2024/data/Central_Region_Weather.rdata")
 write_csv(Central_Region_Weather,"IrishRegionalWeatherData2024/data/Central_Region_Weather.csv")
 
 South_Region_Weather<-prepare_2("IrishRegionalWeatherData2024/data_raw/Valentia.csv","South",23)
-saveRDS(South_Region_Weather,"IrishRegionalWeatherData2024/data/South_Region_Weather.rdata")
+save(South_Region_Weather,file="IrishRegionalWeatherData2024/data/South_Region_Weather.rdata")
 write_csv(South_Region_Weather,"IrishRegionalWeatherData2024/data/South_Region_Weather.csv")
 
 North_Region_Weather<-prepare_2("IrishRegionalWeatherData2024/data_raw/MalinHead.csv","North",23)
-saveRDS(North_Region_Weather,"IrishRegionalWeatherData2024/data/North_Region_Weather.rdata")
+save(North_Region_Weather,file="IrishRegionalWeatherData2024/data/North_Region_Weather.rdata")
 write_csv(North_Region_Weather,"IrishRegionalWeatherData2024/data/North_Region_Weather.csv")
+
